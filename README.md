@@ -1,3 +1,4 @@
+Exp 10
 1. DONUT CHART — Average Gross by Genre
 
 Insert → Donut Chart
@@ -186,3 +187,247 @@ If you want, I’ll also prepare:
 Just tell me:
 👉 “Give me the oral script” or
 👉 “Give me PDF-ready explanation”
+
+
+Exp11
+EXPERIMENT 11 — Human Resources Analytics (Power BI)
+
+📌 Goal: Analyze employees, performance, turnover, hiring trends and create HR dashboard.
+
+🟦 STEP 1 — Download HR Dataset
+
+Use any of these Kaggle datasets:
+
+HR Analytics – Employee Attrition
+
+HR Employee Attrition & Performance
+
+HR Dataset (Kaggle HR Analytics)
+
+Your dataset must include:
+
+Age
+
+Gender
+
+Department
+
+Job Role
+
+Monthly Income
+
+Performance Rating
+
+Attrition (Yes/No)
+
+Training Hours
+
+Job Satisfaction
+
+Hire Date / Tenure
+
+🟦 STEP 2 — Import Dataset in Power BI
+
+Open Power BI Desktop
+
+Go to Home → Get Data → CSV/Excel
+
+Select your HR dataset
+
+Click Load
+
+🟦 STEP 3 — Data Cleaning (Power Query)
+
+Open → Transform Data
+
+Clean the following:
+
+Remove empty rows
+
+Convert columns types:
+
+Age → Whole Number
+
+MonthlyIncome → Whole Number
+
+PerformanceRating → Whole Number
+
+Attrition → Text
+
+HireDate → Date
+
+Create a Tenure Column:
+Go to:
+Add Column → Date → Subtract → Year (Today – HireDate)
+Name it → Tenure (Years)
+
+Click Close & Apply
+
+🟦 STEP 4 — Required Visuals (Based EXACTLY on your Experiment)
+
+The PDF says to use:
+
+Combo Charts
+
+Cards
+
+Bar Charts
+
+Line Charts
+
+Column Charts
+
+Bubble Charts
+
+Maps (Point Maps)
+
+I’ll tell you EXACTLY which visual to create for what insight.
+
+⭐ 1. Card Visual — Total Employees
+
+Visual: Card
+Field: Employee Count (Employee ID → Count)
+
+⭐ 2. Bar Chart — Employees by Department
+
+Visual: Clustered Bar Chart
+Axis → Department
+Value → Count of EmployeeID
+
+This shows workforce distribution.
+
+⭐ 3. Column Chart — Attrition (Turnover) by Department
+
+Visual: Clustered Column Chart
+Axis → Department
+Value → Count of Attrition
+Filter: Attrition = “Yes”
+
+This shows which department has maximum resignations.
+
+⭐ 4. Line Chart — Performance by Tenure
+
+Visual: Line Chart
+Axis → Tenure (Years)
+Values → Average of PerformanceRating
+
+Shows experience vs performance curve.
+
+⭐ 5. Combo Chart — Monthly Income vs Job Level
+
+Visual: Line and Column Chart
+Column → Average Monthly Income
+Line → Count of Employees
+Axis → JobLevel
+
+Shows which level earns the most and how many employees are at each level.
+
+⭐ 6. Bubble Chart — Salary vs Performance vs Experience
+
+Visual: Scatter Chart
+X-axis → Monthly Income
+Y-axis → PerformanceRating
+Size → Tenure
+Legend → Department
+
+Shows employee distribution and outliers.
+
+⭐ 7. Map Visualization (Point Map) — Geography Wise Employees
+
+Use Filled Map or Map
+Location → City / Region
+Value → Count of Employees
+
+Works only if your dataset has location.
+
+⭐ 8. Attrition Analysis Donut Chart
+
+Visual: Donut Chart
+Legend → Attrition (Yes/No)
+Values → Count of EmployeeID
+
+Shows % of employees who left the company.
+
+⭐ 9. Bar Chart — Training Hours vs Performance
+
+Axis → Training Hours
+Value → Average PerformanceRating
+
+Shows if training is effective.
+
+🟦 STEP 5 — Insights for Viva (From the PDF)
+
+Your experiment expects these insights:
+
+1. Turnover Analysis
+
+Highest attrition in ______ department
+
+Possible reason: workload / low job satisfaction / salary gap
+
+2. Performance Evaluation
+
+Highest performance in ______ team
+
+Lower performance in new joiners (< 1 year)
+
+3. Hiring Effectiveness
+
+Most hires in ______ month/year
+
+Average hiring time can be visualized using HireDate
+
+4. Employee Demographics
+
+Age group distribution
+
+Male/Female ratio
+
+Department-wise employee count
+
+5. Training & Development
+
+Employees with more training hours → higher performance
+
+All these points are directly in the PDF 
+
+faee2e80-4399-40d9-a620-9d21f39…
+
+.
+
+🟦 STEP 6 — Final HR Dashboard Layout (Exact Layout to Score Full Marks)
+TOP ROW
+
+🔹 Total Employees (Card)
+
+🔹 Total Attrition (Card)
+
+🔹 Avg Tenure (Card)
+
+🔹 Avg Performance Rating (Card)
+
+ROW 2
+
+🔸 Bar Chart — Employees by Department
+
+🔸 Donut Chart — Attrition Yes vs No
+
+🔸 Column Chart — Attrition by Department
+
+ROW 3
+
+🔸 Line Chart — Performance vs Tenure
+
+🔸 Combo Chart — Income vs JobLevel
+
+🔸 Bubble Chart — Income vs Performance vs Tenure
+
+BOTTOM
+
+🔸 Map — Employees by Location
+
+🔸 Training Hours vs Performance
+
+🔸 Gender Breakdown (Pie Chart)
+
+Perfect and complete.
